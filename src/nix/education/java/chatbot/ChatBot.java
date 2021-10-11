@@ -21,5 +21,16 @@ public class ChatBot {
         for (int i=0; i <= number; i++) {
             System.out.println(i + "!");
         }
+        int hi = 0;
+        do {
+            System.out.println("Давай проверим насколько ты умён!\nКто ты?\n1. Amogus\n2. Человек\n3. Пёсик\n4. " + user);
+            int answer = scan.nextInt();
+            if(answer == 4) {
+                System.out.println(user + ", ты молодец. Пока!");
+                hi = 1;
+            } else {
+                System.out.println("Попробуй ещё раз!");
+            }
+        } while(hi == 0);
     }
 }
